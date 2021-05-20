@@ -1,6 +1,10 @@
 version: '3.4'
 
 services:
+
+  portainer:
+    image: portainer/portainer-ce
+
   catalogdb:
     image: mongo
   catalog.api:
@@ -19,3 +23,4 @@ services:
 
 volumes:
   mongo_data:
+  portainer_data:
